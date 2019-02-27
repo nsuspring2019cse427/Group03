@@ -4,10 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    /*......Initialization.......*/
 
     private TextView screen;
     private String display = "";
@@ -18,14 +21,33 @@ public class MainActivity extends AppCompatActivity {
 
     boolean rAddition,rSubstraction, rMultiplication,rDivission;
 
+    Calculator cal = new Calculator();
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        screen = (TextView) findViewById(R.id.textView_screen);
+
+
+
+
+      screen = (TextView) findViewById(R.id.textView_screen);
         screen.setText(display);
+
+
+
 
 
         button0 = (Button) findViewById(R.id.btn0);
@@ -51,6 +73,195 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        /*....Set OnClickListener for all numeric & operating buttons.......*/
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button7OnClickAction();
+
+
+            }
+        });
+
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button8OnClickAction();
+
+
+            }
+        });
+
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button9OnClickAction();
+
+
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button4OnClickAction();
+
+
+            }
+        });
+
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button5OnClickAction();
+
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button6OnClickAction();
+
+
+            }
+        });
+
+
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button1OnClickAction();
+
+
+
+            }
+        });
+
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button2OnClickAction();
+
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button3OnClickAction();
+
+
+            }
+        });
+
+        buttonDot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                buttonDotOnClickAction();
+
+
+            }
+        });
+
+        button0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button0OnClickAction();
+
+
+            }
+        });
+
+
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                buttonAddOnClickAction();
+
+
+            }
+        });
+
+
+        buttonSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                buttonSubOnClickAction();
+
+
+            }
+        });
+
+        buttonMul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                buttonMulOnClickAction();
+
+
+            }
+        });
+
+
+        buttonDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                buttonDivOnClickAction();
+
+            }
+        });
+
+        buttonEqual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                buttonEqualOnClickAction();
+
+
+
+
+
+
+            }
+        });
+
+
+        buttonClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                buttonClearOnClickAction();
+
+
+
+            }
+        });
+
+
+
+
+
+
+
 
 
 
@@ -58,63 +269,81 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onClickNumber7(View view) {
 
-        screen.setText(screen.getText() + "7");
-    }
 
-    public void onClickNumber8(View view) {
 
-        screen.setText(screen.getText() + "8");
-    }
 
-    public void onClickNumber9(View view) {
 
-        screen.setText(screen.getText() + "9");
-    }
 
-    public void onClickNumber4(View view) {
 
-        screen.setText(screen.getText() + "4");
-    }
+    /*.......OnClickAction methods of all numeric buttons......*/
 
-    public void onClickNumber5(View view) {
 
-        screen.setText(screen.getText() + "5");
-    }
-
-    public void onClickNumber6(View view) {
-
-        screen.setText(screen.getText() + "6");
-    }
-
-    public void onClickNumber1(View view) {
-
-        screen.setText(screen.getText() + "1");
-    }
-
-    public void onClickNumber2(View view) {
-
-        screen.setText(screen.getText() + "2");
-    }
-
-    public void onClickNumber3(View view) {
-
-        screen.setText(screen.getText() + "3");
-    }
-
-    public void onClickDot(View view) {
-
-        screen.setText(screen.getText() + ".");
-    }
-
-    public void onClickNumber0(View view) {
+    private void button0OnClickAction() {
 
         screen.setText(screen.getText() + "0");
     }
 
 
-    public void onClickOperatorAdditon(View view) {
+    private void button1OnClickAction() {
+        screen.setText(screen.getText() + "1");
+    }
+
+    private void button2OnClickAction() {
+
+        screen.setText(screen.getText() + "2");
+    }
+
+    private void button3OnClickAction() {
+        screen.setText(screen.getText() + "3");
+    }
+
+    private void button4OnClickAction() {
+
+        screen.setText(screen.getText() + "4");
+    }
+
+
+    private void button5OnClickAction() {
+        screen.setText(screen.getText() + "5");
+    }
+
+    private void button6OnClickAction() {
+
+        screen.setText(screen.getText() + "6");
+    }
+
+    private void button7OnClickAction() {
+
+        screen.setText(screen.getText() + "7");
+    }
+
+    private void button8OnClickAction() {
+
+        screen.setText(screen.getText() + "8");
+    }
+
+
+    private void button9OnClickAction() {
+
+        screen.setText(screen.getText() + "9");
+    }
+
+
+    private void buttonDotOnClickAction() {
+        screen.setText(screen.getText() + ".");
+    }
+
+
+
+
+
+
+
+
+    /*......OnClickAction methods of operating {+,-,*,*} buttons......*/
+
+    private void buttonAddOnClickAction() {
 
         if(screen == null){
             screen.setText("");
@@ -125,9 +354,10 @@ public class MainActivity extends AppCompatActivity {
             rAddition = true;
             screen.setText(null);
         }
+
     }
 
-    public void onClickOperatorSub(View view) {
+    private void buttonSubOnClickAction() {
 
         valueOne = Float.parseFloat(screen.getText() + "");
 
@@ -135,57 +365,72 @@ public class MainActivity extends AppCompatActivity {
         screen.setText(null);
     }
 
-    public void onClickOperatorMul(View view) {
+
+    private void buttonMulOnClickAction() {
 
         valueOne = Float.parseFloat(screen.getText() + "");
         rMultiplication = true;
         screen.setText(null);
     }
 
-    public void onClickOperatorDiv(View view) {
+    private void buttonDivOnClickAction() {
 
-      valueOne = Float.parseFloat(screen.getText() + "");
+        valueOne = Float.parseFloat(screen.getText() + "");
 
         rDivission = true;
         screen.setText(null);
     }
 
+    /*.....End of OnClickAction methods of operating {+,-,*,*} buttons..... */
 
 
-    public void onClickEqual(View view) {
+/*.......OnClickAction methods for Equal(=) operator button.........*/
+    private void buttonEqualOnClickAction() {
 
-       valueTwo = Float.parseFloat(screen.getText() + "");
+        valueTwo = Float.parseFloat(screen.getText() + "");
 
-       if(rAddition == true){
-           screen.setText(valueOne + valueTwo + "");
-           rAddition = false;
-       }
+        if(rAddition == true){
+            screen.setText(cal.Addition(valueOne,valueTwo) + "");
+            rAddition = false;
+
+            //cal.Addition(valueOne,valueTwo) + ""
+        }
 
         if(rSubstraction == true){
-            screen.setText(valueOne - valueTwo + "");
+            screen.setText(cal.Substraction(valueOne,valueTwo) + "");
             rSubstraction = false;
         }
 
 
         if(rMultiplication == true){
-            screen.setText(valueOne * valueTwo + "");
+            screen.setText(cal.Multiplication(valueOne,valueTwo) + "");
             rMultiplication = false;
         }
 
 
         if(rDivission == true){
-            screen.setText(valueOne / valueTwo + "");
+            screen.setText(cal.Divission(valueOne,valueTwo) + "");
             rDivission = false;
         }
 
+
+
     }
 
-    public void onClickClear(View view) {
+
+    /*.......OnClickAction methods for Clear button.........*/
+
+    private void buttonClearOnClickAction() {
 
         screen.setText("");
-
-
     }
+
+    /*........Finish...........*/
+
+
+
+
+
 
 
 }
