@@ -128,8 +128,8 @@ public class CalculatorTest {
         double number1 = 7;
         double number2 = 0;
 
-        //Calculator.Division(number1, number2);
-        
+        Calculator.Division(number1, number2);
+
     }
 
 }
