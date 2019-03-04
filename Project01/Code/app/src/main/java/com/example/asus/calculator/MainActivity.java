@@ -397,7 +397,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(rSubstraction == true){
-            screen.setText(cal.Substraction(valueOne,valueTwo) + "");
+            screen.setText(cal.Subtraction(valueOne,valueTwo) + "");
             rSubstraction = false;
         }
 

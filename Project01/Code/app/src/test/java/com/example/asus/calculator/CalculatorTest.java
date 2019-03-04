@@ -24,7 +24,7 @@ public class CalculatorTest {
 
     /*
     * Take two double parameters
-    * Call Addition mehod of the Calculator class
+    * Call Addition method of the Calculator class
     * Call assertEquals method to compare between expected & actual value
     * */
 
@@ -38,4 +38,24 @@ public class CalculatorTest {
         assertEquals(expected,actual,DELTA);
 
     }
+
+
+    @Test
+    /*
+     * Take two double parameters
+     * Call Subtraction method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+
+    public void testSubtraction() throws Exception {
+
+            double number1 = 2.4;
+            double number2 = 1.7;
+            double expected = 0.7;
+
+            double actual = Calculator.Subtraction(number1,number2);
+            assertEquals(expected,actual,DELTA);
+
+    }
+
 }

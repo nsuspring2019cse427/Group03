@@ -13,7 +13,7 @@ public class Calculator {
 
     /*....Substraction method*/
 
-    public static double Substraction(double number1,double number2){
+    public static double Subtraction(double number1,double number2){
 
         return number1 - number2;
     }
