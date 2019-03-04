@@ -77,6 +77,23 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    /*
+     * Take two double parameters
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+
+    public void testMultiplication() throws Exception {
+
+        double number1 = 3.7 ;
+        double number2 = 8.2;
+        double expected = 30.34;
+
+        double actual = Calculator.Multiplication(number1,number2);
+        assertEquals(expected,actual,DELTA);
+
+    }
 
 
 
