@@ -6,21 +6,21 @@ public class Calculator {
 
 
     /*....Addition method*/
-    public static float Addition(float number1,float number2){
+    public static double Addition(double number1,double number2){
 
         return number1 + number2;
     }
 
     /*....Substraction method*/
 
-    public static float Substraction(float number1,float number2){
+    public static double Substraction(double number1,double number2){
 
         return number1 - number2;
     }
 
     /*....Multiplication method*/
 
-    public static float Multiplication(float number1,float number2){
+    public static double Multiplication(double number1,double number2){
 
         return number1 * number2;
     }
@@ -28,7 +28,7 @@ public class Calculator {
 
     /*....Divission method*/
 
-    public static float Divission(float number1,float number2){
+    public static double Divission(double number1,double number2){
 
         return number1 / number2;
     }

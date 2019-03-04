@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button0, button1, button2, button3, button4, button5, button6,
             button7, button8, button9, buttonAdd, buttonSub, buttonDiv,
             buttonMul, buttonDot, buttonClear, buttonEqual;
-    float valueOne,valueTwo;
+    double valueOne,valueTwo;
 
     boolean rAddition,rSubstraction, rMultiplication,rDivission;
 
@@ -349,7 +349,7 @@ public class MainActivity extends AppCompatActivity {
             screen.setText("");
         }
         else{
-            valueOne = Float.parseFloat(screen.getText() + "");
+            valueOne = Double.parseDouble(screen.getText() + "");
 
             rAddition = true;
             screen.setText(null);
@@ -359,7 +359,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void buttonSubOnClickAction() {
 
-        valueOne = Float.parseFloat(screen.getText() + "");
+        valueOne = Double.parseDouble(screen.getText() + "");
 
         rSubstraction = true;
         screen.setText(null);
@@ -368,14 +368,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void buttonMulOnClickAction() {
 
-        valueOne = Float.parseFloat(screen.getText() + "");
+        valueOne = Double.parseDouble(screen.getText() + "");
         rMultiplication = true;
         screen.setText(null);
     }
 
     private void buttonDivOnClickAction() {
 
-        valueOne = Float.parseFloat(screen.getText() + "");
+        valueOne = Double.parseDouble(screen.getText() + "");
 
         rDivission = true;
         screen.setText(null);
@@ -387,7 +387,7 @@ public class MainActivity extends AppCompatActivity {
 /*.......OnClickAction methods for Equal(=) operator button.........*/
     private void buttonEqualOnClickAction() {
 
-        valueTwo = Float.parseFloat(screen.getText() + "");
+        valueTwo = Double.parseDouble(screen.getText() + "");
 
         if(rAddition == true){
             screen.setText(cal.Addition(valueOne,valueTwo) + "");
