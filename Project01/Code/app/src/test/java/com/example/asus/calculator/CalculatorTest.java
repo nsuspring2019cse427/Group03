@@ -58,4 +58,26 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    /*
+     * Objective: Check the method for negative outputs
+     * Take two double parameters
+     * Call Subtraction method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+
+    public void testSubtractionForNegativeOutputs() throws Exception {
+
+        double number1 = 1.3 ;
+        double number2 = 4.2;
+        double expected = -2.9;
+
+        double actual = Calculator.Subtraction(number1,number2);
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+
+
 }
