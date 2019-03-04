@@ -114,5 +114,22 @@ public class CalculatorTest {
 
     }
 
+    /*--Test for checking output of division by zero operations--*/
+
+    /*
+     * Objective: Showing test failed with getting the java.lang.ArithmeticException
+     * Take two double parameters with one zero
+     * Call Division method of the Calculator class
+     * */
+
+    @Test(expected=java.lang.ArithmeticException.class)
+    public void testDivisionByZero() throws ArithmeticException
+    {
+        double number1 = 7;
+        double number2 = 0;
+
+        //Calculator.Division(number1, number2);
+        
+    }
 
 }
