@@ -409,7 +409,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(rDivission == true){
-            screen.setText(cal.Divission(valueOne,valueTwo) + "");
+            screen.setText(cal.Division(valueOne,valueTwo) + "");
             rDivission = false;
         }
 

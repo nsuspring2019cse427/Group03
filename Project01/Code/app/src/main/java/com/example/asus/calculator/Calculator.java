@@ -28,7 +28,7 @@ public class Calculator {
 
     /*....Divission method*/
 
-    public static double Divission(double number1,double number2){
+    public static double Division(double number1,double number2){
 
         return number1 / number2;
     }

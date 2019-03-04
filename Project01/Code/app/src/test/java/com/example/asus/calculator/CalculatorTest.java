@@ -96,5 +96,23 @@ public class CalculatorTest {
     }
 
 
+    @Test
+    /*
+     * Take two double parameters
+     * Call Division method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+
+    public void testDivision() throws Exception {
+
+        double number1 = 5 ;
+        double number2 = 2;
+        double expected = 2.5;
+
+        double actual = Calculator.Division(number1,number2);
+        assertEquals(expected,actual,DELTA);
+
+    }
+
 
 }
