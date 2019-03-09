@@ -25,16 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -43,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-      screen = (TextView) findViewById(R.id.textView_screen);
+        screen = (TextView) findViewById(R.id.textView_screen);
         screen.setText(display);
 
 
