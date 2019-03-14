@@ -68,6 +68,68 @@ import static org.hamcrest.core.AllOf.allOf;
                 allOf(withId(R.id.btn5), withText("5"), isDisplayed()));
         appCompatButton.perform(click());
     }
+    
+    @Test
+    public void button6OnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btn6), withText("6"), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+    
+    @Test
+    public void button7OnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btn7), withText("7"), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+    
+    @Test
+    public void button8OnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btn7), withText("8"), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+
+    @Test
+    public void button9OnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btn9), withText("9"), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+    
+    @Test
+    public void button0OnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btn0), withText("0"), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+    
+    @Test
+    public void buttonDotOnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btnDot), withText("."), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+    
+    
+    @Test
+    public void buttonClearOnClickActionTest(){
+
+        ViewInteraction appCompatButton = onView(
+                allOf(withId(R.id.btnClear), withText(""), isDisplayed()));
+        appCompatButton.perform(click());
+    }
+    
+    
+    
+    
+    
 
 
 
