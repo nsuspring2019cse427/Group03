@@ -38,8 +38,86 @@ public class CalculatorTest {
         assertEquals(expected,actual,DELTA);
 
     }
+    
+    public void testAddition() throws Exception {
 
+        double number1 = 2.0;
+        double number2 = 1.0;
+        double expected = 3.0;
 
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+    
+    public void testAddition() throws Exception {
+
+        double number1 = 112.0;
+        double number2 = 12.0;
+        double expected = 124.0;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+    
+    public void testAddition() throws Exception {
+
+        double number1 = 3000.0;
+        double number2 = 4005.0;
+        double expected = 7005.0;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+    
+    public void testAddition() throws Exception {
+
+        double number1 = 100000.0;
+        double number2 = 100000.0;
+        double expected = 200000.0;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+
+    public void testAddition() throws Exception {
+
+        double number1 = 500000.0;
+        double number2 = 5000000.0;
+        double expected = 5500000.0;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+
+    public void testAddition() throws Exception {
+
+        double number1 = 1001.0;
+        double number2 = 2004.5;
+        double expected = 3005.5;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+    
+    public void testAddition() throws Exception {
+
+        double number1 = 10202.0;
+        double number2 = 20201.0;
+        double expected = 30403.0;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
+    
+    public void testAddition() throws Exception {
+
+        double number1 = 2.0;
+        double number2 = 1.0;
+        double expected = 3.0;
+
+        double actual = Calculator.Addition(number1,number2);
+        assertEquals(expected,actual,DELTA);
+    }
     @Test
     /*
      * Take two double parameters
@@ -105,7 +183,7 @@ public class CalculatorTest {
 
     public void testDivision() throws Exception {
 
-        double number1 = 5 ;
+        double number1 = .5;
         double number2 = 2;
         double expected = 2.5;
 
