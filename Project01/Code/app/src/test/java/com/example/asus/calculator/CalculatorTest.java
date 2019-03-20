@@ -135,6 +135,40 @@ public class CalculatorTest {
             assertEquals(expected,actual,DELTA);
 
     }
+    
+    public void testSubtraction() throws Exception {
+
+        double number1 = 7.8;
+        double number2 = 5.3;
+        double expected = 2.5;
+
+        double actual = Calculator.Subtraction(number1,number2);
+        assertEquals(expected,actual,DELTA);
+
+}
+    
+    public void testSubtraction() throws Exception {
+
+        double number1 = 100078.8;
+        double number2 = 3.5;
+        double expected = 100075.3;
+
+        double actual = Calculator.Subtraction(number1,number2);
+        assertEquals(expected,actual,DELTA);
+
+}
+
+    public void testSubtraction() throws Exception {
+
+        double number1 = 5078.8;
+        double number2 = 4567.5;
+        double expected = 511.3;
+
+        double actual = Calculator.Subtraction(number1,number2);
+        assertEquals(expected,actual,DELTA);
+
+}
+    
 
     @Test
     /*
