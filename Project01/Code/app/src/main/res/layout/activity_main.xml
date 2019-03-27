@@ -80,7 +80,7 @@
         android:layout_below="@+id/btn7"
         android:layout_toLeftOf="@+id/btn5"
         android:layout_toStartOf="@+id/btn5"
-         />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -93,7 +93,7 @@
         android:layout_below="@+id/btn8"
         android:layout_toRightOf="@+id/btn7"
         android:layout_toEndOf="@+id/btn7"
-         />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -106,7 +106,7 @@
         android:layout_below="@+id/btn9"
         android:layout_toRightOf="@+id/btn5"
         android:layout_toEndOf="@+id/btn5"
-       />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -119,7 +119,7 @@
         android:layout_below="@+id/btn4"
         android:layout_toLeftOf="@+id/btn5"
         android:layout_toStartOf="@+id/btn5"
-       />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -158,7 +158,7 @@
         android:layout_below="@+id/btn1"
         android:layout_alignLeft="@+id/btn1"
         android:layout_alignStart="@+id/btn1"
-       />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -171,7 +171,7 @@
         android:layout_below="@+id/btn2"
         android:layout_toRightOf="@+id/btn1"
         android:layout_toEndOf="@+id/btn1"
-       />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -210,7 +210,7 @@
         android:background="#2acc5d"
         android:layout_below="@+id/btnPlus"
         android:layout_toRightOf="@+id/btn9"
-      />
+        />
 
     <Button
         android:layout_width="90dp"
@@ -222,7 +222,7 @@
         android:background="#2acc5d"
         android:layout_below="@+id/btnMinus"
         android:layout_toRightOf="@+id/btn9"
-         />
+        />
 
     <Button
         android:layout_width="90dp"

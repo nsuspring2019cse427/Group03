@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         screen = (TextView) findViewById(R.id.textView_screen);
+
         screen.setText(display);
 
 
