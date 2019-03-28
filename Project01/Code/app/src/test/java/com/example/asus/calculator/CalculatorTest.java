@@ -139,6 +139,38 @@ public class CalculatorTest {
     }
 
 
+    /*.........Input Space Partitioning.......*/
+    /*........Input Characteristics:
+    Integers (Positive & Negative),
+     Floats (Positive & Negative),
+     Double (Positive & Negative),
+      All zero ,
+      All null*/
+
+
+    /*...Test to check addition() for two positive integers from the blocks*/
+    @Test
+    /*
+     * Take two Positive Integers parameters from the blocks {684,39852}
+     * Call Addition method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testAdditionForPositiveIntegers(){
+         int number1 = 684;
+         int number2= 39852;
+         Double d1 = new Double(number1);
+         Double d2 = new Double(number2);
+
+         int expected = 40536;
+
+         double actual = Calculator.Addition(d1,d2);
+
+         assertEquals(expected,actual,DELTA);
+
+    }
+
+
+
 
 
 
