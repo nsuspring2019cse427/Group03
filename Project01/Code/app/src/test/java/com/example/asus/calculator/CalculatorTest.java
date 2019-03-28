@@ -205,11 +205,33 @@ public class CalculatorTest {
 
         float expected = 13213.84f;
 
+        double actual = (float)(Calculator.Addition(number1,number2));
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+    /*...Test to check addition() for two negative floats from the blocks*/
+    @Test
+    /*
+     * Take two Negative Floats parameters from the blocks {-7136.87f,-72341.21f}
+     * Call Addition method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testAdditionForNegativeFloats(){
+        float number1 = -7136.87f;
+        float number2= -72341.21f;
+
+
+        float expected = -79478.078125f;
+
         double actual = Calculator.Addition(number1,number2);
 
         assertEquals(expected,actual,DELTA);
 
     }
+
 
 
 

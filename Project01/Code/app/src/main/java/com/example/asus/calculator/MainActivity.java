@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             buttonMul, buttonDot, buttonClear, buttonEqual;
     double valueOne,valueTwo;
 
-    boolean rAddition,rSubstraction, rMultiplication,rDivission;
+    boolean rAddition,rSubtraction, rMultiplication,rDivission;
 
     Calculator cal = new Calculator();
 
@@ -336,6 +337,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void buttonAddOnClickAction() {
 
+
+
         if(screen == null){
             screen.setText("");
         }
@@ -349,27 +352,44 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void buttonSubOnClickAction() {
+        if(screen == null){
+            screen.setText("");
+        }
+        else {
+            valueOne = Double.parseDouble(screen.getText() +"");
 
-        valueOne = Double.parseDouble(screen.getText() + "");
-
-        rSubstraction = true;
-        screen.setText(null);
+            rSubtraction = true;
+            screen.setText(null);
+        }
     }
 
 
     private void buttonMulOnClickAction() {
+        if(screen == null){
+            screen.setText("");
+        }
+        else{
+            valueOne = Double.parseDouble(screen.getText() + "");
+            rMultiplication = true;
+            screen.setText(null);
+        }
 
-        valueOne = Double.parseDouble(screen.getText() + "");
-        rMultiplication = true;
-        screen.setText(null);
     }
 
     private void buttonDivOnClickAction() {
 
-        valueOne = Double.parseDouble(screen.getText() + "");
+        if(screen == null){
+            screen.setText("");
+        }
 
-        rDivission = true;
-        screen.setText(null);
+        else{
+            valueOne = Double.parseDouble(screen.getText() + "");
+
+            rDivission = true;
+            screen.setText(null);
+        }
+
+
     }
 
     /*.....End of OnClickAction methods of operating {+,-,*,*} buttons..... */
@@ -387,9 +407,9 @@ public class MainActivity extends AppCompatActivity {
             //cal.Addition(valueOne,valueTwo) + ""
         }
 
-        if(rSubstraction == true){
+        if(rSubtraction == true){
             screen.setText(cal.Subtraction(valueOne,valueTwo) + "");
-            rSubstraction = false;
+            rSubtraction = false;
         }
 
 
