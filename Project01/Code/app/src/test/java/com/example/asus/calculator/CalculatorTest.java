@@ -191,6 +191,30 @@ public class CalculatorTest {
     }
 
 
+    /*...Test to check addition() for two positive floats from the blocks*/
+    @Test
+    /*
+     * Take two Positive Floats parameters from the blocks {872.61f,12341.23f}
+     * Call Addition method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testAdditionForPositiveFloats(){
+        float number1 = 872.61f;
+        float number2= 12341.23f;
+
+
+        float expected = 13213.84f;
+
+        double actual = Calculator.Addition(number1,number2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+
+
+
 
 
 
