@@ -272,6 +272,25 @@ public class CalculatorTest {
         assertEquals(expected,actual,DELTA);
 
     }
+    
+    
+    /*
+     * following testcase going to take one positive & 
+     * one negative integer as input and add them together
+     * (part of input space partition)
+     */
+    
+    @Test
+    public void testAdditionPosNegIntegers() {
+    	int num1 = 32565;
+    	int num2 = -625;
+    	
+    	int expected = 31940;
+    	
+    	int actual = Calculator.Addition(num1, num2);
+    	
+    	assertEquals(expected,actual,DELTA);
+    }
 
 
 
