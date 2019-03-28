@@ -205,7 +205,7 @@ public class CalculatorTest {
 
         float expected = 13213.84f;
 
-        double actual = (float)(Calculator.Addition(number1,number2));
+        double actual = (float) (Calculator.Addition(number1,number2));
 
         assertEquals(expected,actual,DELTA);
 
@@ -226,7 +226,28 @@ public class CalculatorTest {
 
         float expected = -79478.078125f;
 
-        double actual = Calculator.Addition(number1,number2);
+        double actual = (float) Calculator.Addition(number1,number2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+    /*...Test to check addition() for two positive doubles from the blocks*/
+    @Test
+    /*
+     * Take two Positive Doubles parameters from the blocks {2459.432,64936.0003}
+     * Call Addition method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testAdditionForPositiveDoubles(){
+        double number1 = 2459.432;
+        double number2=64936.0003;
+
+
+        double expected = 67395.4323;
+
+        double actual =  Calculator.Addition(number1,number2);
 
         assertEquals(expected,actual,DELTA);
 
