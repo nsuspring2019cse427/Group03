@@ -287,15 +287,32 @@ public class CalculatorTest {
     	
     	int expected = 31940;
     	
-    	int actual = Calculator.Addition(num1, num2);
-    	
-    	assertEquals(expected,actual,DELTA);
+    	Double doub1 = new Double(num1);
+    	Double doub2 = new Double(num2);
+
+    	double actual = (int) Calculator.Addition(doub1, doub2);
+
+    	assertEquals(expected, actual, DELTA);
+
     }
 
 
+    /*
+       following testcase method going to take one positive integer and
+       one positive double value as input and add them
+     */
 
+    @Test
+    public void testAdditionWithIntandDouble(){
+        int num1 = 1000;
+        double num2 = 100.26;
 
+        Double d1 = new Double(num1);
 
+        double actual = Calculator.Addition(d1, num2);
+
+        assertEquals(1100.26, actual, DELTA);
+    }
 
 
 
