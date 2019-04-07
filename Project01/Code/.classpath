@@ -67,5 +67,6 @@
 	<classpathentry kind="lib" path="app/build/intermediates/transforms/dexBuilder/debug/9.jar"/>
 	<classpathentry kind="lib" path="app/build/intermediates/transforms/mergeJavaRes/debug/0.jar"/>
 	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="app/build/intermediates/incremental-verifier/debug"/>
 </classpath>

@@ -313,10 +313,64 @@ public class CalculatorTest {
 
         assertEquals(1100.26, actual, DELTA);
     }
-
-
-
-
+    
+    
+    /*
+     * input space partitioning for substraction
+     */
+    
+    /*
+     * the following test case takes two positive integers as input and subtracts num2 from num1
+     */
+    
+    @Test
+    public void testSubWithPositiveInts() {
+    	int num1 = 302;
+    	int num2 = 6;
+    	
+    	Double d1 = new Double(num1);
+    	Double d2 = new Double(num2);
+    	
+    	double actual = Calculator.Subtraction(d1, d2);
+    	
+    	assertEquals(294.0, actual, DELTA);
+    }
+    
+    
+    /*
+     * the following test case takes two positive doubles as input and subtracts num2 from num1
+     */
+    
+    @Test
+    public void testSubWithPositiveDouble() {
+    	Double num1 = 254.3;
+    	Double num2 = 54.3;
+    	
+    	
+    	double actual = Calculator.Subtraction(d1, d2);
+    	
+    	assertEquals(200.0, actual, DELTA);
+    }
+    
+    /*
+    * the following test case takes one double positive value and subtracts one positive 
+    * integer value from it
+    */
+   
+   @Test
+   public void testSubIntFromDouble() {
+   	Double num1 = 1000.648;
+   	int num2 = 200;
+   	
+   	Double d2 = new Double(num2);
+   	
+   	
+   	double actual = Calculator.Subtraction(num1, d2);
+   	
+   	assertEquals(800.648, actual, DELTA);
+   }
+    
+    
 
 
 
