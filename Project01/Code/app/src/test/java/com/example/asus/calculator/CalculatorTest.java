@@ -333,7 +333,7 @@ public class CalculatorTest {
     	
     	double actual = Calculator.Subtraction(d1, d2);
     	
-    	assertEquals(294.0, actual, DELTA);
+    	assertEquals(296.0, actual, DELTA);
     }
     
     
@@ -347,7 +347,7 @@ public class CalculatorTest {
     	Double num2 = 54.3;
     	
     	
-    	double actual = Calculator.Subtraction(d1, d2);
+    	double actual = Calculator.Subtraction(num1, num2);
     	
     	assertEquals(200.0, actual, DELTA);
     }
@@ -369,7 +369,9 @@ public class CalculatorTest {
    	
    	assertEquals(800.648, actual, DELTA);
    }
-    
+
+
+   
     
 
 
