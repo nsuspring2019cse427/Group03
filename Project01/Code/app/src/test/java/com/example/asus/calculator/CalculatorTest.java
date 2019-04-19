@@ -527,6 +527,33 @@ public class CalculatorTest {
 
 
 
+    /*
+     * input space partition tests for Division
+     */
+
+    /*...Test to check Division() for two positive integers from the blocks*/
+    @Test
+    /*
+     * Take two Positive Integers parameters from the blocks {684,39852}
+     * Call Division method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testDivisionForPositiveIntegers(){
+        int number1 = 684;
+        int number2= 39852;
+        Double d1 = new Double(number1);
+        Double d2 = new Double(number2);
+
+        double expected = 0.017163504968;
+
+        double actual = Calculator.Division(d1,d2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+
 
 
 
