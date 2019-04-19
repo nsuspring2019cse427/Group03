@@ -462,6 +462,27 @@ public class CalculatorTest {
     }
 
 
+    /*...Test to check Multiplication() for two positive doubles from the blocks*/
+    @Test
+    /*
+     * Take two Positive Doubles parameters from the blocks {2459.432,64936.0003}
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testMultiplicationForPositiveDoubles(){
+        double number1 = 2459.432;
+        double number2=64936.003;
+
+
+        double expected = 1597056837;
+
+        double actual =  Calculator.Multiplication(number1,number2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
 
 
 
