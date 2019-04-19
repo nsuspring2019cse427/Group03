@@ -420,6 +420,27 @@ public class CalculatorTest {
     }
 
 
+    /*...Test to check Multiplication() for two positive floats from the blocks*/
+    @Test
+    /*
+     * Take two Positive Floats parameters from the blocks {872.61f,12341.23f}
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testMultiplicationForPositiveFloats(){
+        float number1 = 872.61f;
+        float number2= 12341.23f;
+
+
+        float expected = 10769081;
+
+        double actual = (float) (Calculator.Multiplication(number1,number2));
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
 
 
 
