@@ -432,9 +432,30 @@ public class CalculatorTest {
         float number2= 12341.23f;
 
 
-        float expected = 10769081;
+        float expected = 10769081f;
 
         double actual = (float) (Calculator.Multiplication(number1,number2));
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+    /*...Test to check Multiplication() for two negative floats from the blocks*/
+    @Test
+    /*
+     * Take two Negative Floats parameters from the blocks {-7136.87f,-72341.21f}
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testMultiplicationForNegativeFloats(){
+        float number1 = -7136.87f;
+        float number2= -72341.21f;
+
+
+        float expected = 516289811f;
+
+        double actual = (float) Calculator.Multiplication(number1,number2);
 
         assertEquals(expected,actual,DELTA);
 
