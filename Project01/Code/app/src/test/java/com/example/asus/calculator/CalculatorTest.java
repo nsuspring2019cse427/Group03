@@ -142,10 +142,10 @@ public class CalculatorTest {
     /*.........Input Space Partitioning.......*/
     /*........Input Characteristics:
     Integers (Positive & Negative),
-     Floats (Positive & Negative),
-     Double (Positive & Negative),
-      All zero ,
-      All null*/
+    Floats (Positive & Negative),
+    Double (Positive & Negative),
+    All zero ,
+    All null*/
 
 
     /*...Test to check addition() for two positive integers from the blocks*/
@@ -316,7 +316,7 @@ public class CalculatorTest {
     
     
     /*
-     * input space partitioning for substraction
+     * input space partitioning for subtraction
      */
     
     /*
@@ -371,8 +371,38 @@ public class CalculatorTest {
    }
 
 
-   
-    
+    /*
+     * input space partition tests for Multiplication
+     */
+
+    /*...Test to check Multiplication() for two positive integers from the blocks*/
+    @Test
+    /*
+     * Take two Positive Integers parameters from the blocks {684,39852}
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testMultiplicationForPositiveIntegers(){
+        int number1 = 684;
+        int number2= 39852;
+        Double d1 = new Double(number1);
+        Double d2 = new Double(number2);
+
+        int expected = 27258768;
+
+        double actual = Calculator.Multiplication(d1,d2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+
+
+
+
+
+
 
 
 
