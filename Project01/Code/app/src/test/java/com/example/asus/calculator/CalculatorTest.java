@@ -483,6 +483,26 @@ public class CalculatorTest {
     }
 
 
+    /*...Test to check Multiplication() for two negative doubles from the blocks*/
+    @Test
+    /*
+     * Take two Negative Doubles parameters from the blocks {-2459.432,-64936.0003}
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testMultiplicationForNegativeDoubles(){
+        double number1 = -2459.432;
+        double number2= -64936.003;
+
+
+        double expected = 140224883;
+
+        double actual =  Calculator.Multiplication(number1,number2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
 
 
 
