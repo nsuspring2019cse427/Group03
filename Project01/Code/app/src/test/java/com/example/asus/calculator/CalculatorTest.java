@@ -303,7 +303,7 @@ public class CalculatorTest {
      */
 
     @Test
-    public void testAdditionWithIntandDouble(){
+    public void testAdditionWithIntAndDouble(){
         int num1 = 1000;
         double num2 = 100.26;
 
@@ -389,6 +389,29 @@ public class CalculatorTest {
         Double d2 = new Double(number2);
 
         int expected = 27258768;
+
+        double actual = Calculator.Multiplication(d1,d2);
+
+        assertEquals(expected,actual,DELTA);
+
+    }
+
+
+
+    /*...Test to check Multiplication() for two negative integers from the blocks*/
+    @Test
+    /*
+     * Take two Negative Integers parameters from the blocks {-4731,-98432}
+     * Call Multiplication method of the Calculator class
+     * Call assertEquals method to compare between expected & actual value
+     * */
+    public void testMultiplicationForNegativeIntegers(){
+        int number1 = -4731;
+        int number2= -98432;
+        Double d1 = new Double(number1);
+        Double d2 = new Double(number2);
+
+        int expected = 465681792;
 
         double actual = Calculator.Multiplication(d1,d2);
 
