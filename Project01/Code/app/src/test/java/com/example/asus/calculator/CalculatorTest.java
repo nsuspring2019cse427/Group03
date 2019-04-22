@@ -551,6 +551,89 @@ public class CalculatorTest {
         assertEquals(expected,actual,DELTA);
 
     }
+    
+ /*
+  * takes 2 positive double as input and divide 1st input by 2nd input
+  * Calls assertEquals method to compare between actual and expected value
+  *     
+  */
+    @Test
+    public void testDivisionWithPostiveDouble() {
+    	double num1 = 500.365697;
+    	double num2 = 10.2556;
+    	
+    	double expected = 48.7895;
+    	
+    	double actual = Calculator.Division(num1, num2);
+    	
+    	assertEquals(expected, actual, DELTA);
+    	
+    }
+    
+    /*
+     * takes 1 positive double and 1 negative double as input
+     * divides 1st input by 2nd input
+     * Calls assertEquals method to compare between actual and expected value
+     *     
+     */
+    
+       @Test
+       public void testDivisionWithPosNegDouble() {
+       	double num1 = 16911.365;
+       	double num2 = -250.956;
+       	
+       	double expected = -67.387769170691276558440523438372;
+       	
+       	double actual = Calculator.Division(num1, num2);
+       	
+       	assertEquals(expected, actual, DELTA);
+       	
+       }
+       
+       /*
+        * takes  2 negative doubles as input
+        * divides 1st input by 2nd input
+        * Calls assertEquals method to compare between actual and expected value
+        *     
+        */
+       
+          @Test
+          public void testDivisionWithNegativeDouble() {
+          	double num1 = -6311.501;
+          	double num2 = -321.245;
+          	
+          	double expected = 19.647001509751124531121106943299;
+          	
+          	double actual = Calculator.Division(num1, num2);
+          	
+          	assertEquals(expected, actual, DELTA);
+          	
+          }
+          
+
+       /*
+        * takes  zero as numerator and negative double as denominator
+        * as input divides 1st input by 2nd input
+        * Calls assertEquals method to compare between actual and expected value
+        *     
+        */
+          
+        @Test
+        public void testDivisionWithNumeratorZero() {
+          double num1 = 0.0;
+          double num2 = -321.245;
+             	
+          double expected = 0;
+             	
+          double actual = Calculator.Division(num1, num2);
+             	
+           assertEquals(expected, actual, DELTA);	
+             
+        }          
+          
+       
+    
+    
 
 
 
