@@ -21,6 +21,8 @@ import static org.hamcrest.core.AllOf.allOf;
         @Rule
         public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+
+
         @Test
         public void button0OnClickActionTest(){
 
@@ -101,13 +103,7 @@ import static org.hamcrest.core.AllOf.allOf;
         appCompatButton.perform(click());
     }
     
-    @Test
-    public void button0OnClickActionTest(){
-
-        ViewInteraction appCompatButton = onView(
-                allOf(withId(R.id.btn0), withText("0"), isDisplayed()));
-        appCompatButton.perform(click());
-    }
+   
     
     @Test
     public void buttonDotOnClickActionTest(){
