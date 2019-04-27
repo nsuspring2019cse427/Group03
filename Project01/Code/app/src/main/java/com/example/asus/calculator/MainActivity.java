@@ -389,16 +389,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void buttonDivOnClickAction() {
+        try{
+            if(screen == null){
+                screen.setText("");
+            }
+            else{
+                valueOne = Double.parseDouble(screen.getText() + "");
 
-        if(screen == null){
-            screen.setText("");
-        }
-
-        else{
-            valueOne = Double.parseDouble(screen.getText() + "");
-
-            rDivission = true;
-            screen.setText(null);
+                rDivission = true;
+                screen.setText(null);
+            }
+        } catch(NumberFormatException e) {
+            Toast.makeText(MainActivity.this,"Wrong Input",Toast.LENGTH_LONG).show();
         }
 
 
