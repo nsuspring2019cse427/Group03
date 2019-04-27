@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+G:\Study Resources\CSE427\Projects\Project01\.metadata\.plugins\org.eclipse.jdt.core
+715257351.index
+1515010508.index
+1419162110.index
+3006176505.index
+759826778.index
+1562443221.index
+3276040310.index
+707251523.index
+596738408.index
+3024312544.index
+3291065455.index
