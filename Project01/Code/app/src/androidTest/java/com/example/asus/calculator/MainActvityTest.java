@@ -103,7 +103,7 @@ import static org.hamcrest.core.AllOf.allOf;
         appCompatButton.perform(click());
     }
     
-   
+
     
     @Test
     public void buttonDotOnClickActionTest(){

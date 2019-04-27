@@ -1,6 +1,7 @@
 package com.example.asus.calculator;
 
 
+import android.widget.Toast;
 
 public class Calculator {
 
@@ -30,7 +31,9 @@ public class Calculator {
 
     public static double Division(double number1,double number2){
 
-        return number1 / number2;
+       return number1 / number2;
+
+
     }
     
     

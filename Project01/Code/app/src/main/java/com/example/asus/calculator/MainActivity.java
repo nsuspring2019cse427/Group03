@@ -339,28 +339,35 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        if(screen == null){
-            screen.setText("");
-        }
-        else{
-            valueOne = Double.parseDouble(screen.getText() + "");
+        try{
+            if(screen == null){
+                screen.setText("");
+            }
+            else{
+                valueOne = Double.parseDouble(screen.getText() + "");
 
-            rAddition = true;
-            screen.setText(null);
+                rAddition = true;
+                screen.setText(null);
+            }
+        } catch(NumberFormatException e) {
+           Toast.makeText(MainActivity.this,"Wrong Input",Toast.LENGTH_LONG).show();
         }
+
+
+
 
     }
 
     private void buttonSubOnClickAction() {
-        if(screen == null){
-            screen.setText("");
-        }
-        else {
-            valueOne = Double.parseDouble(screen.getText() +"");
+
+            screen.setText("-");
+            rSubtraction = true;
+
+            /*valueOne = Double.parseDouble(screen.getText() + );
 
             rSubtraction = true;
-            screen.setText(null);
-        }
+            screen.setText(null);*/
+
     }
 
 
@@ -420,8 +427,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(rDivission == true){
-            screen.setText(cal.Division(valueOne,valueTwo) + "");
-            rDivission = false;
+            try {
+                screen.setText(cal.Division(valueOne, valueTwo) + "");
+                rDivission = false;
+            }
+            catch (ArithmeticException e){
+                if(valueTwo==0) {
+                    Toast.makeText(MainActivity.this, "You should not divide a number by zero", Toast.LENGTH_LONG).show();
+                }
+            }
         }
 
 
