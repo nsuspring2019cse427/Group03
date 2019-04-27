@@ -365,22 +365,27 @@ public class MainActivity extends AppCompatActivity {
 
             /*valueOne = Double.parseDouble(screen.getText() + );
 
-            rSubtraction = true;
-            screen.setText(null);*/
+            rSubtraction = true;*/
+            screen.setText(null);
 
     }
 
 
     private void buttonMulOnClickAction() {
-        if(screen == null){
-            screen.setText("");
-        }
-        else{
-            valueOne = Double.parseDouble(screen.getText() + "");
-            rMultiplication = true;
-            screen.setText(null);
-        }
 
+        try{
+            if(screen == null){
+                screen.setText("");
+            }
+            else{
+                valueOne = Double.parseDouble(screen.getText() + "");
+
+                rMultiplication = true;
+                screen.setText(null);
+            }
+        } catch(NumberFormatException e) {
+            Toast.makeText(MainActivity.this,"Wrong Input",Toast.LENGTH_LONG).show();
+        }
     }
 
     private void buttonDivOnClickAction() {
