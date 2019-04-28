@@ -185,6 +185,68 @@ import static org.hamcrest.core.AllOf.allOf;
     }
 
 
+    @Test
+    /*
+     *Integration test of verifying Subtraction method by getting random input automatically
+     * */
+    public void buttonSubtractionIntegrationTest() {
+
+
+        ViewInteraction appCompatButton7 = onView(
+                allOf(withId(R.id.btn7), withText("7"), isDisplayed()));
+        appCompatButton7.perform(click());
+
+        ViewInteraction appCompatButton8 = onView(
+                allOf(withId(R.id.btn8), withText("8"), isDisplayed()));
+        appCompatButton8.perform(click());
+
+        ViewInteraction appCompatButton9 = onView(
+                allOf(withId(R.id.btn9), withText("9"), isDisplayed()));
+        appCompatButton9.perform(click());
+
+        ViewInteraction appCompatButton1 = onView(
+                allOf(withId(R.id.btn1), withText("1"), isDisplayed()));
+        appCompatButton1.perform(click());
+
+
+
+        ViewInteraction appCompatButtonAdd = onView(
+                allOf(withId(R.id.btnMinus), withText("-"), isDisplayed()));
+        appCompatButtonAdd.perform(click());
+
+        ViewInteraction appCompatButton4 = onView(
+                allOf(withId(R.id.btn4), withText("4"), isDisplayed()));
+        appCompatButton4.perform(click());
+        ViewInteraction appCompatButton5 = onView(
+                allOf(withId(R.id.btn5), withText("5"), isDisplayed()));
+        appCompatButton5.perform(click());
+
+        ViewInteraction appCompatButton2 = onView(
+                allOf(withId(R.id.btn2), withText("2"), isDisplayed()));
+        appCompatButton2.perform(click());
+
+        ViewInteraction appCompatButton3 = onView(
+                allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
+        appCompatButton3.perform(click());
+
+        ViewInteraction appCompatButtonEqu = onView(
+                allOf(withId(R.id.btnEqual), withText("="), isDisplayed()));
+        appCompatButtonEqu.perform(click());
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
 
 
 
