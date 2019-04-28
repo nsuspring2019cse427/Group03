@@ -337,8 +337,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void buttonAddOnClickAction() {
 
-
-
         try{
             if(screen == null){
                 screen.setText("");
@@ -352,9 +350,6 @@ public class MainActivity extends AppCompatActivity {
         } catch(NumberFormatException e) {
            Toast.makeText(MainActivity.this,"Wrong Input",Toast.LENGTH_LONG).show();
         }
-
-
-
 
     }
 
