@@ -233,17 +233,58 @@ import static org.hamcrest.core.AllOf.allOf;
                 allOf(withId(R.id.btnEqual), withText("="), isDisplayed()));
         appCompatButtonEqu.perform(click());
 
-
-
-
-
-
-
-
-
-
     }
 
+
+    @Test
+    /*
+     *Integration test of verifying Multiplication method by getting random input automatically
+     * */
+    public void buttonSubtractionIntegrationTest() {
+
+
+        ViewInteraction appCompatButton8 = onView(
+                allOf(withId(R.id.btn8), withText("8"), isDisplayed()));
+        appCompatButton8.perform(click());
+
+        ViewInteraction appCompatButton6 = onView(
+                allOf(withId(R.id.btn6), withText("6"), isDisplayed()));
+        appCompatButton6.perform(click());
+
+        ViewInteraction appCompatButton3 = onView(
+                allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
+        appCompatButton3.perform(click());
+
+        ViewInteraction appCompatButton1 = onView(
+                allOf(withId(R.id.btn1), withText("1"), isDisplayed()));
+        appCompatButton1.perform(click());
+
+
+
+        ViewInteraction appCompatButtonAdd = onView(
+                allOf(withId(R.id.btnMult), withText("*"), isDisplayed()));
+        appCompatButtonAdd.perform(click());
+
+        ViewInteraction appCompatButton4 = onView(
+                allOf(withId(R.id.btn4), withText("4"), isDisplayed()));
+        appCompatButton4.perform(click());
+        ViewInteraction appCompatButton3 = onView(
+                allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
+        appCompatButton3.perform(click());
+
+        ViewInteraction appCompatButton2 = onView(
+                allOf(withId(R.id.btn2), withText("2"), isDisplayed()));
+        appCompatButton2.perform(click());
+
+        ViewInteraction appCompatButton8 = onView(
+                allOf(withId(R.id.btn8), withText("8"), isDisplayed()));
+        appCompatButton8.perform(click());
+
+        ViewInteraction appCompatButtonEqu = onView(
+                allOf(withId(R.id.btnEqual), withText("="), isDisplayed()));
+        appCompatButtonEqu.perform(click());
+
+    }
 
 
 
