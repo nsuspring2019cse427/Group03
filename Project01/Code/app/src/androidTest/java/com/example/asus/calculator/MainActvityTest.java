@@ -262,7 +262,7 @@ import static org.hamcrest.core.AllOf.allOf;
 
 
         ViewInteraction appCompatButtonAdd = onView(
-                allOf(withId(R.id.btnMult), withText("*"), isDisplayed()));
+                allOf(withId(R.id.btnMult), withText("x"), isDisplayed()));
         appCompatButtonAdd.perform(click());
 
         ViewInteraction appCompatButton4 = onView(
@@ -308,31 +308,23 @@ import static org.hamcrest.core.AllOf.allOf;
                 allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
         appCompatButton3.perform(click());
 
-        ViewInteraction againAppCompatButton1 = onView(
-                allOf(withId(R.id.btn1), withText("1"), isDisplayed()));
-            againAppCompatButton1.perform(click());
 
 
 
         ViewInteraction appCompatButtonAdd = onView(
-                allOf(withId(R.id.btnDiv), withText("/"), isDisplayed()));
+                allOf(withId(R.id.btnDiv), withText("÷"), isDisplayed()));
         appCompatButtonAdd.perform(click());
 
-        ViewInteraction againAppCompatButton3 = onView(
-                allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
-            againAppCompatButton3.perform(click());
+        ViewInteraction appCompatButton5 = onView(
+                allOf(withId(R.id.btn5), withText("5"), isDisplayed()));
+            appCompatButton5.perform(click());
 
-        ViewInteraction nextAppCompatButton1 = onView(
-                allOf(withId(R.id.btn1), withText("1"), isDisplayed()));
-            nextAppCompatButton1.perform(click());
 
-        ViewInteraction againAppCompatButton2 = onView(
-                allOf(withId(R.id.btn2), withText("2"), isDisplayed()));
-            againAppCompatButton2.perform(click());
+        ViewInteraction appCompatButton4 = onView(
+                allOf(withId(R.id.btn4), withText("4"), isDisplayed()));
+            appCompatButton4.perform(click());
 
-        ViewInteraction nextAppCompatButton3 = onView(
-                allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
-            nextAppCompatButton3.perform(click());
+
 
         ViewInteraction appCompatButtonEqu = onView(
                 allOf(withId(R.id.btnEqual), withText("="), isDisplayed()));

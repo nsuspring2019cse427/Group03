@@ -401,7 +401,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*.....End of OnClickAction methods of operating {+,-,*,*} buttons..... */
+    /*.....End of OnClickAction methods of operating {+,-,*,/} buttons..... */
 
 
 /*.......OnClickAction methods for Equal(=) operator button.........*/
