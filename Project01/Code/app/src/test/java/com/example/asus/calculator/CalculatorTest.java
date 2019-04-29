@@ -558,7 +558,7 @@ public class CalculatorTest {
   *     
   */
     @Test
-    public void testDivisionWithPostiveDouble() {
+    public void testDivisionWithPositiveDouble() {
     	double num1 = 500.365697;
     	double num2 = 10.2556;
     	
