@@ -240,7 +240,7 @@ import static org.hamcrest.core.AllOf.allOf;
     /*
      *Integration test of verifying Multiplication method by getting random input automatically
      * */
-    public void buttonSubtractionIntegrationTest() {
+    public void buttonMultiplicationIntegrationTest() {
 
 
         ViewInteraction appCompatButton8 = onView(
@@ -268,17 +268,17 @@ import static org.hamcrest.core.AllOf.allOf;
         ViewInteraction appCompatButton4 = onView(
                 allOf(withId(R.id.btn4), withText("4"), isDisplayed()));
         appCompatButton4.perform(click());
-        ViewInteraction appCompatButton3 = onView(
+        ViewInteraction againAppCompatButton3 = onView(
                 allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
-        appCompatButton3.perform(click());
+        againAppCompatButton3.perform(click());
 
         ViewInteraction appCompatButton2 = onView(
                 allOf(withId(R.id.btn2), withText("2"), isDisplayed()));
         appCompatButton2.perform(click());
 
-        ViewInteraction appCompatButton8 = onView(
+        ViewInteraction againAppCompatButton8 = onView(
                 allOf(withId(R.id.btn8), withText("8"), isDisplayed()));
-        appCompatButton8.perform(click());
+        againAppCompatButton8.perform(click());
 
         ViewInteraction appCompatButtonEqu = onView(
                 allOf(withId(R.id.btnEqual), withText("="), isDisplayed()));
@@ -291,9 +291,9 @@ import static org.hamcrest.core.AllOf.allOf;
 
         @Test
     /*
-     *Integration test of verifying Multiplication method by getting random input automatically
+     *Integration test of verifying Division method by getting random input automatically
      * */
-    public void buttonSubtractionIntegrationTest() {
+    public void buttonDivisionIntegrationTest() {
 
 
         ViewInteraction appCompatButton1 = onView(
@@ -308,9 +308,9 @@ import static org.hamcrest.core.AllOf.allOf;
                 allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
         appCompatButton3.perform(click());
 
-        ViewInteraction appCompatButton1 = onView(
+        ViewInteraction againAppCompatButton1 = onView(
                 allOf(withId(R.id.btn1), withText("1"), isDisplayed()));
-        appCompatButton1.perform(click());
+            againAppCompatButton1.perform(click());
 
 
 
@@ -318,20 +318,21 @@ import static org.hamcrest.core.AllOf.allOf;
                 allOf(withId(R.id.btnDiv), withText("/"), isDisplayed()));
         appCompatButtonAdd.perform(click());
 
-        ViewInteraction appCompatButton3 = onView(
+        ViewInteraction againAppCompatButton3 = onView(
                 allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
-        appCompatButton3.perform(click());
-        ViewInteraction appCompatButton1 = onView(
+            againAppCompatButton3.perform(click());
+
+        ViewInteraction nextAppCompatButton1 = onView(
                 allOf(withId(R.id.btn1), withText("1"), isDisplayed()));
-        appCompatButton1.perform(click());
+            nextAppCompatButton1.perform(click());
 
-        ViewInteraction appCompatButton2 = onView(
+        ViewInteraction againAppCompatButton2 = onView(
                 allOf(withId(R.id.btn2), withText("2"), isDisplayed()));
-        appCompatButton2.perform(click());
+            againAppCompatButton2.perform(click());
 
-        ViewInteraction appCompatButton3 = onView(
+        ViewInteraction nextAppCompatButton3 = onView(
                 allOf(withId(R.id.btn3), withText("3"), isDisplayed()));
-        appCompatButton3.perform(click());
+            nextAppCompatButton3.perform(click());
 
         ViewInteraction appCompatButtonEqu = onView(
                 allOf(withId(R.id.btnEqual), withText("="), isDisplayed()));
